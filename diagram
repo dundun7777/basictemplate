@@ -1,0 +1,25 @@
+flowchart TD
+    A[Mulai] --> B[Persiapan Bahan]
+    B --> C[Pengumpulan Bahan]
+    C --> D[Preparasi Serbuk Cangkang Kerang]
+    D --> E[Karakterisasi Bahan]
+    E --> F[Rancangan Campuran Beton]
+    
+    F --> G{Variasi Substitusi\nSerbuk Cangkang Kerang}
+    G -->|0%| H1[Beton Normal]
+    G -->|5%| H2[Beton dengan\n5% Substitusi]
+    G -->|10%| H3[Beton dengan\n10% Substitusi]
+    G -->|15%| H4[Beton dengan\n15% Substitusi]
+
+    H1 & H2 & H3 & H4 --> I[Pembuatan Benda Uji]
+    I --> J[Perawatan Benda Uji]
+    J --> K[Pengujian]
+    
+    K --> L[Uji Kuat Tekan]
+    K --> M[Uji Belah]
+    K --> N[Uji Porositas]
+
+    L & M & N --> O[Analisis Data]
+    O --> P[Pengolahan Hasil]
+    P --> Q[Kesimpulan]
+    Q --> R[Selesai]
